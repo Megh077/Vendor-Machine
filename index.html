@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vending Machine</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>VENDING MACHINE PLATFORM</h1>
+    </header>
+    
+    <div class="main-content" id="main-content">
+        <div class="full-content" id="full-content">
+        <div class="vending-box">
+        <div class="item" id="item-chips">
+            <img src="chips.png" alt="Chips">
+            <div class="name">Name: Chips</div>
+            <div class="cost">Cost : <span class="PerQuantity"></span></div>
+            <div class="quantity">Quantity: <span class="CurrentAvailable"></span></div>
+        </div>
+        <div class="item" id="item-cola">
+            <img src="cola.png" alt="Cola">
+            <div class="name">Name: Cola</div>
+            <div class="cost">Cost : <span class="PerQuantity"></span></div>
+            <div class="quantity">Quantity: <span class="CurrentAvailable"></span></div>
+        </div>
+        <div class="item" id="item-chocolate">
+            <img src="chocolate.png" alt="Chocolate">
+            <div class="name">Name: Chocolate</div>
+            <div class="cost">Cost : <span class="PerQuantity"></span></div>
+            <div class="quantity">Quantity: <span class="CurrentAvailable"></span></div>
+        </div>
+        <div class="item" id="item-pizza">
+            <img src="pizza.png" alt="Pizza">
+            <div class="name">Name: Pizza</div>
+            <div class="cost">Cost : <span class="PerQuantity"></span></div>
+            <div class="quantity">Quantity: <span class="CurrentAvailable"></span></div>
+        </div>
+        <div class="item" id="item-fries">
+            <img src="fries.png" alt="Fries">
+            <div class="name">Name: Fries</div>
+            <div class="cost">Cost : <span class="PerQuantity"></span></div>
+            <div class="quantity">Quantity: <span class="CurrentAvailable"></span></div>
+        </div>
+        <div class="item" id="item-pepsi">
+            <img src="soda.png" alt="Pepsi">
+            <div class="name">Name: Pepsi</div>
+            <div class="cost">Cost : <span class="PerQuantity"></span></div>
+            <div class="quantity">Quantity: <span class="CurrentAvailable"></span></div>
+        </div>
+        <div class="item" id="item-frooti">
+            <img src="frooti.png" alt="Frooti">
+            <div class="name">Name: Frooti</div>
+            <div class="cost">Cost : <span class="PerQuantity"></span></div>
+            <div class="quantity">Quantity: <span class="CurrentAvailable"></span></div>
+        </div>
+        <div class="item" id="item-popcorn">
+            <img src="popcorn.png" alt="Popcorn">
+            <div class="name">Name: Popcorn</div>
+            <div class="cost">Cost : <span class="PerQuantity"></span></div>
+            <div class="quantity">Quantity: <span class="CurrentAvailable"></span></div>
+        </div>
+        <div class="item" id="item-icecream">
+            <img src="icecream.png" alt="IceCream">
+            <div class="name">Name: IceCream</div>
+            <div class="cost">Cost : <span class="PerQuantity"></span></div>
+            <div class="quantity">Quantity: <span class="CurrentAvailable"></span></div>
+        </div>
+        <button id="buy-button" onclick="displayPurchaseForm()">BUY</button>
+    </div>
+    <div id="purchase-form" class="hidden">
+        <select id="item-name">
+            <option value="" disabled selected>Select Item</option>
+            <option value="Chips">Chips</option>
+            <option value="Cola">Cola</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Fries">Fries</option>
+            <option value="Pepsi">Pepsi</option>
+            <option value="Frooti">Frooti</option>
+            <option value="Popcorn">Popcorn</option>
+            <option value="IceCream">IceCream</option>
+        </select>
+        <input type="number" id="quantity" placeholder="Quantity" min=0>
+        <input type="number" id="amount" placeholder="Amount" min=0>
+        <button id="bill-button" onclick="generateBill()">BUY</button>
+    </div>
+</div>
+    <div id="bill-popup" class="hidden">
+        <div id="bill-content">
+            <h2>Bill Details</h2>
+            <p id="bill-item">Item: </p>
+            <p id="bill-quantity">Quantity: </p>
+            <p id="bill-total-cost">Total Cost: </p>
+            <p id="bill-balance">Balance Amount: </p>
+            <button id="close-popup" onclick="closeBillPopup()">Close</button>
+        </div>
+    </div>
+    
+    
+</div>
+    
+    <script src="script.js"></script>   
+</body>
+</html>

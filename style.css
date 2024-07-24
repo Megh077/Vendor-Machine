@@ -1,0 +1,134 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-color: bisque;
+}
+header {
+    background-color: rgb(146, 55, 55);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+}
+.main-content {
+    background-color:bisque ;
+    padding: 20px;
+    height: calc(100% - 100px);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.vending-box {
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(113, 184, 206);
+    padding: 8px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.item {
+    display: inline-block;
+    width: 28%;
+    padding: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: white; 
+    border: 1px solid black; 
+    margin: 10px; 
+    border-radius: 5px; 
+}
+
+.item img {
+    width: 50px;
+    height: 50px;
+}
+.name{
+    font-weight: bold;
+    font-family: Helvetica;
+}
+.cost{
+    font-weight: bold;
+    font-family: Helvetica;
+}
+.quantity{
+    font-weight: bold;
+    font-family: Helvetica;
+}
+#buy-button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: rgb(45, 37, 165);
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+#bill-button{
+    margin: 20px 300px;
+    padding: 8px 30px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    color: black;
+
+}
+#purchase-form {
+    display: none;
+    margin-top: 20px;
+    background-color: rgb(146, 55, 55); 
+    padding: 20px 2px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#purchase-form select{
+    padding-right: 90px;
+}
+#bill-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(146, 55, 55);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none; 
+}
+
+#bill-content {
+    text-align: center;
+}
+
+#close-popup {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: green;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.blur {
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
